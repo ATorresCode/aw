@@ -1,0 +1,49 @@
+site_name: Aplicaciones Web
+site_url: https://atorrescode.github.io/aw/
+theme:
+   name: 'material'
+   features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+   font:
+    text: 'Roboto, sans-serif'
+    code: 'Courier New, monospace'
+   icon:
+    repo: 'fontawesome/brands/github'
+   palette:
+    - scheme: default
+      toggle:
+          icon: material/brightness-7 
+          name: Canvia a mode oscur
+
+    - scheme: slate
+      toggle:
+          icon: material/brightness-4
+          name: Canvia a mode clar
+   logo: img/favicon.ico
+   favicon: img/favicon.ico
+
+nav:
+    - Home: index.md
+    - UF01. Introducción a internet y web: u01/index.md
+    - UF02. Sistemas de gestión de contenidos: u02/index.md
+extra_css:
+  - css/style.css
+extra_templates:
+plugins:
+  - search
+  # - with-pdf
+  # - pdf-export:
+  #     combined: true
+  # - page-to-pdf
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  # - pymdownx.embed
