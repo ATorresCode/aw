@@ -29,7 +29,6 @@ nav:
     - U01. Aplicaciones web de escritorio:
       - 1.1. Internet, la Web y sus aplicaciones: u01/u01.1.md
       - A1.1. Actividad: u01/a01.1.md
-    - UF02. Sistemas de gestión de contenidos: u02/index.md
 extra_css:
   - css/style.css
 extra_templates:
