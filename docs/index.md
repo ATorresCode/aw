@@ -3,7 +3,6 @@
   **IES Benigasló (La Vall d'Uixó)**  
   *Família Professional d'Informàtica i Comunicacions*  
   *Conselleria d'Educació, Universitats i Ocupació — Generalitat Valenciana*
-</div>
 
 ## 1. Dades Generals del Cicle i del Mòdul
 
