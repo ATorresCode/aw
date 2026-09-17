@@ -18,16 +18,16 @@ Con la aplicación web de **Outlook**, podemos gestionar el correo electrónico,
 
 Accede a **Outlook** con tu cuenta corporativa y realiza las siguientes configuraciones y comprobaciones:
 
-1 **Configuración de firma personalizada:**
+1. **Configuración de firma personalizada:**
     - Ve a la configuración de Outlook y crea una firma de correo automática con tu nombre completo, curso y centro educativo.
-2 **Gestión de contactos:**
+2. **Gestión de contactos:**
     - Añade a tu lista de contactos a dos compañeros/as de clase y al profesor con sus direcciones `@alu.edu.gva.es`.
     - Crea una lista de distribución o grupo de contactos llamado `2SMX-AW` que contenga a dichos miembros.
-3 **Envío y organización del correo:**
+3. **Envío y organización del correo:**
     - Envía un correo de prueba al grupo de contactos adjuntando un archivo.
     - Crea una carpeta específica para organizar los correos recibidos de la asignatura y mueve el correo de prueba a dicha carpeta.
     - Crea una regla específica para clasificar automáticamente los correos recibidos del grupo creado a esa carpeta.
-4 **Evidencias:** Adjunta una captura de pantalla de cada una de las configuraciones realizadas como evidencia del trabajo realizado.
+4. **Evidencias:** Adjunta una captura de pantalla de cada una de las configuraciones realizadas como evidencia del trabajo realizado.
 
 ---
 
