@@ -26,9 +26,9 @@ theme:
 
 nav:
     - Home: index.md
-    - U01. Aplicaciones web de escritorio:
-      - 1.1. Internet, la Web y sus aplicaciones: u01/u01.1.md
-      - A1.1. Actividad: u01/a01.1.md
+    - Unidad 1. Aplicaciones web de escritorio:
+      - 1. Internet, la Web y sus aplicaciones: u01-aplicaciones-web-escritorio/r01-internet-y-web.md
+      - Actividades: u01-aplicaciones-web-escritorio/a01-office365.md
 extra_css:
   - css/style.css
 extra_templates:
