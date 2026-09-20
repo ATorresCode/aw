@@ -21,8 +21,8 @@ theme:
       toggle:
           icon: material/brightness-4
           name: Canvia a mode clar
-   logo: img/favicon.ico
-   favicon: img/favicon.ico
+   logo: assets/img/favicon.ico
+   favicon: assets/img/favicon.ico
 
 nav:
     - Home: index.md
@@ -30,7 +30,7 @@ nav:
       - 1. Internet, la Web y sus aplicaciones: u01-aplicaciones-web-escritorio/r01-internet-y-web.md
       - Actividades: u01-aplicaciones-web-escritorio/a01-office365.md
 extra_css:
-  - css/style.css
+  - assets/css/style.css
 extra_templates:
 plugins:
   - search

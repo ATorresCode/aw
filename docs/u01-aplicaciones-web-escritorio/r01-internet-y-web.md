@@ -1,4 +1,4 @@
-# UD1.1: Internet, la Web y sus aplicaciones
+# R1: Internet, la Web y sus aplicaciones
 
 ## 1. Introducción: Internet vs. la Web
 

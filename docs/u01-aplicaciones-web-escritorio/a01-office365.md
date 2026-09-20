@@ -1,10 +1,10 @@
-# A1.1: Office 365
+# A1: Office 365
 
 Vamos a trabajar con vuestra cuenta de Microsoft `@alu.edu.gva.es` para realizar esta práctica.
 
 Microsoft dispone de todas estas aplicaciones web de escritorio. Vamos a ver algunas de ellas en detalle:
 
-![Imagen de referencia de las aplicaciones web de escritorio de Microsoft](office365.png)
+![Imagen de referencia de las aplicaciones web de escritorio de Microsoft](img/office365.png)
 
 > **Nota:** Siempre que se pida adjuntar una captura de pantalla del trabajo realizado, debe mostrarse la imagen de vuestra cuenta como evidencia.
 
@@ -37,7 +37,7 @@ Accede a la aplicación **Calendar** de Office 365, elige una semana y crea el h
 
 Tiene que tener un aspecto parecido al que se muestra a continuación:
 
-![Imagen de referencia de la vista semanal del calendario de Outlook/Calendar.](calendar.png)
+![Imagen de referencia de la vista semanal del calendario de Outlook/Calendar.](img/calendar.png)
 
 El calendario debe cumplir las siguientes especificaciones:
 
@@ -56,7 +56,7 @@ Existen muchas aplicaciones para organizar el trabajo que debemos realizar. Offi
 
 Crea una tarea para la entrega de esta actividad. Debe tener un aspecto parecido al que se muestra a continuación:
 
-![Imagen de referencia de Microsoft To Do con una tarea planificada, marcada como importante, con categoría verde y recordatorio.](todo.png)
+![Imagen de referencia de Microsoft To Do con una tarea planificada, marcada como importante, con categoría verde y recordatorio.](img/todo.png)
 
 - Fíjate en que está marcada como importante, tiene una categoría y un recordatorio el miércoles 27 de septiembre (elige la hora que prefieras).
 - Busca información sobre más aplicaciones web de gestión de tareas.
