@@ -96,3 +96,4 @@ Tiene que cumplir las siguientes especificaciones:
 - Una vez creado, indica que cualquier persona puede responder.
 - Pega en esta tarea el enlace al formulario.
 - Invita a dos compañeros o compañeras a realizar el test y pega a continuación una captura de pantalla de las estadísticas de las respuestas.
+- Comparte el enlace del formulario con el profesor para que pueda realizarlo y ver las estadísticas de las respuestas.

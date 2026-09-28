@@ -28,7 +28,8 @@ nav:
     - Home: index.md
     - Unidad 1. Aplicaciones web de escritorio:
       - 1. Internet, la Web y sus aplicaciones: u01-aplicaciones-web-escritorio/r01-internet-y-web.md
-      - Actividades: u01-aplicaciones-web-escritorio/a01-office365.md
+      - Actividades Office 365: u01-aplicaciones-web-escritorio/a01-office365.md
+      - Actividades Microsoft Sway: u01-aplicaciones-web-escritorio/a02-sway.md
 extra_css:
   - assets/css/style.css
 extra_templates:
@@ -39,12 +40,33 @@ plugins:
   #     combined: true
   # - page-to-pdf
 markdown_extensions:
+  # Avisos: !!! note, !!! warning, !!! tip...
   - admonition
+
+  # Bloques desplegables: ??? question, ???+ example...
+  - pymdownx.details
+
+  # Resaltado de código
   - pymdownx.highlight:
       linenums: true
+      anchor_linenums: true
+
+  # Bloques de código avanzados y Mermaid
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  # - pymdownx.embed
+
+  # Listas de tareas: - [ ] y - [x]
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+  # Permite añadir atributos a elementos Markdown
+  - attr_list
+
+  # Permite combinar Markdown dentro de HTML
+  - md_in_html
+
+  # Notas al pie
+  - footnotes
