@@ -28,6 +28,7 @@ nav:
     - Home: index.md
     - Unidad 1. Aplicaciones web de escritorio:
       - 1. Internet, la Web y sus aplicaciones: u01-aplicaciones-web-escritorio/r01-internet-y-web.md
+      - 2. Conceptos básicos de Internet: u01-aplicaciones-web-escritorio/r02-conceptos-basicos-internet.md
       - Actividades Office 365: u01-aplicaciones-web-escritorio/a01-office365.md
       - Actividades Microsoft Sway: u01-aplicaciones-web-escritorio/a02-sway.md
 extra_css:
