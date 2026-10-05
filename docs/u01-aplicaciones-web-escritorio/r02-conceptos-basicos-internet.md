@@ -1,62 +1,42 @@
-# R2: Conceptos básicos de Internet
+# R2: Conexiones, nube y navegación por Internet
 
-## 1. Internet y la Web
+La diferencia entre Internet y la Web, el modelo cliente-servidor, los navegadores y la evolución de la Web se explican en [R1: Internet, la Web y sus aplicaciones](r01-internet-y-web.md). En esta página nos centramos en las formas de conectarse, los servicios en la nube y algunos conceptos prácticos para navegar.
 
-### ¿Qué es Internet?
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 1.5rem 0;">
+  <iframe src="https://www.youtube.com/embed/jKA5hz3dV-g?start=88" title="Video introductorio sobre Internet y conectividad" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
 
-Internet es una red global que conecta miles de millones de ordenadores y otros dispositivos electrónicos. Permite acceder a información, comunicarse con otras personas y utilizar numerosos servicios.
+## 1. Cómo nos conectamos a Internet
 
-Cuando un dispositivo está **en línea**, significa que está conectado a Internet. Para conectarse desde casa, normalmente se contrata el acceso a un proveedor de servicios de Internet.
+El **proveedor de servicios de Internet** (ISP, por sus siglas en inglés) conecta el hogar, el centro educativo o la empresa a Internet. La tecnología disponible, la cobertura y las condiciones del plan dependen de la ubicación y del proveedor.
 
-### ¿Qué es la Web?
+### Tecnologías de acceso
 
-La **World Wide Web** (WWW o Web) es un conjunto de sitios y páginas web al que se accede a través de Internet. La Web es, por tanto, uno de los servicios que funcionan sobre Internet, no otro nombre para la propia red.
+- **Acceso telefónico (*dial-up*):** utilizaba la línea telefónica fija y era una conexión lenta. Mientras se usaba, no permitía utilizar esa línea para llamadas al mismo tiempo. Está obsoleta y se incluye aquí como referencia histórica.
+- **DSL (Digital Subscriber Line):** ofrece banda ancha a través de la línea telefónica y permite usar Internet y el teléfono simultáneamente. En muchas zonas ha sido sustituida por fibra.
+- **Cable coaxial:** ofrece banda ancha a través de una red de cable. Las prestaciones pueden variar según la tecnología y la zona.
+- **Fibra óptica:** transmite datos mediante señales luminosas por cables de fibra. Suele ofrecer conexiones rápidas y estables; su disponibilidad depende del despliegue de la red.
+- **Red móvil (4G y 5G):** proporciona acceso inalámbrico a través de antenas del operador. La cobertura, la congestión de la red, el dispositivo y el plan contratado influyen en la velocidad y los datos disponibles.
+- **Internet por satélite:** puede ofrecer conexión en lugares donde no llegan redes terrestres. La latencia y las condiciones del servicio dependen de la tecnología y del proveedor. Por ejemplo, Starlink utiliza satélites de órbita baja para reducir la latencia y mejorar la velocidad.
 
-Un sitio web puede contener texto, imágenes y otros recursos. Puede servir para consultar noticias, aprender, compartir fotografías o realizar tareas de forma interactiva.
+### Velocidad y calidad de la conexión
 
-### ¿Cómo funciona?
+Los planes suelen expresar la velocidad en **Mbps** (megabits por segundo), a menudo con valores distintos para las descargas y las subidas. Un megabyte (MB) contiene ocho megabits (Mb), por lo que Mbps y MB/s no son la misma unidad.
 
-Al visitar una página, el navegador envía una solicitud a través de Internet al servidor donde se encuentra el sitio web. El servidor procesa la solicitud y devuelve los datos necesarios para que el navegador muestre la página.
+La velocidad anunciada no siempre coincide con la que se obtiene: puede variar por la cobertura, la congestión, el equipo y la conexión entre el dispositivo y el router. La **latencia**, medida normalmente en milisegundos (ms), indica cuánto tarda en responder la conexión y es especialmente importante en videollamadas, juegos en línea y otras comunicaciones en tiempo real.
 
-```mermaid
-sequenceDiagram
- actor Usuario
- participant Navegador
- participant Internet
- participant Servidor
+Algunos buscadores, como Google, ofrecen servicios de prueba de velocidad que permiten comprobar la conexión y la latencia. También existen servicios independientes, como [Speedtest](https://www.speedtest.net/).
 
- Usuario->>Navegador: Abre una dirección web
- Navegador->>Internet: Envía una solicitud
- Internet->>Servidor: La solicitud llega al sitio
- Servidor-->>Internet: Devuelve los datos de la página
- Internet-->>Navegador: Entrega la respuesta
- Navegador-->>Usuario: Muestra la página
-```
+### Hardware de red doméstica
 
-## 2. Conexión a Internet
+- **Módem:** establece la comunicación con el tipo de red del proveedor, por ejemplo una red de cable o DSL.
+- **ONT:** en una instalación de fibra, el terminal de red óptica convierte la señal de la fibra para que pueda utilizarla el equipo de la red doméstica. Según la instalación, puede estar integrado con el router.
+- **Router:** conecta los dispositivos de la red local y dirige el tráfico entre esta e Internet. El módem o la ONT y el router pueden estar en equipos separados o en un único dispositivo.
+- **Punto de acceso Wi-Fi:** permite conectar dispositivos a la red local sin cable. **Wi-Fi es la conexión inalámbrica entre dispositivos y el router; no es en sí el servicio de Internet.**
 
-Para enviar y recibir correo, navegar por la Web o reproducir vídeos, los dispositivos necesitan una conexión a Internet. En casa, un router inalámbrico permite conectar varios dispositivos mediante **Wi-Fi** al mismo tiempo.
+## 2. La nube y las aplicaciones web
 
-El tipo de conexión disponible depende de la cobertura y de los servicios que ofrezcan los **proveedores de servicios de Internet** (ISP, por sus siglas en inglés).
-
-### Tipos de conexión
-
-- **Acceso telefónico (*dial-up*):** utiliza la línea telefónica fija y es una conexión lenta. Mientras se usa, no permite utilizar esa línea para llamadas al mismo tiempo.
-- **DSL:** ofrece banda ancha a través de una línea telefónica y permite usar Internet y el teléfono simultáneamente.
-- **Cable:** utiliza una red de televisión por cable. Su disponibilidad depende de que exista esa infraestructura en la zona.
-- **Satélite:** se conecta mediante satélites y puede dar servicio en lugares donde no llegan otras redes terrestres.
-- **Red móvil:** conecta los dispositivos de forma inalámbrica a través de la red del operador. La velocidad y los datos disponibles dependen de la cobertura y del plan contratado (por ejemplo, 3G, 4G o 5G).
-
-Los ISP suelen ofrecer distintas velocidades y planes. La velocidad se expresa habitualmente en **Mbps** (megabits por segundo).
-
-### Hardware necesario
-
-- **Módem:** adapta las señales para que los dispositivos puedan comunicarse a través del tipo de conexión contratado. El término procede de *modulador-demodulador*.
-- **Router o encaminador:** conecta varios dispositivos entre sí y comparte una conexión a Internet, formando una red local. Muchos routers incluyen un módem integrado.
-
-## 3. La nube y las aplicaciones web
-
-### ¿Qué es la nube?
+### Qué significa «la nube»
 
 La **nube** (*cloud*) hace referencia a servicios y recursos disponibles a través de Internet. Cuando un archivo se guarda en la nube, se almacena en servidores remotos en lugar de depender únicamente del disco duro del dispositivo.
 
@@ -66,56 +46,53 @@ Algunos usos habituales son:
 - **Compartición de archivos:** facilitar que varias personas accedan a los mismos archivos.
 - **Copias de seguridad:** mantener una copia remota que permita recuperar los datos si el dispositivo se pierde, se daña o deja de funcionar.
 
-### ¿Qué es una aplicación web?
+### Aplicaciones web
 
-Una **aplicación web** es un programa al que se accede a través de un navegador y que suele procesar o guardar información en servidores conectados a Internet. Por lo general, no es necesario instalarla como un programa tradicional de escritorio.
+Una **aplicación web** permite realizar tareas desde un navegador y puede guardar o procesar información en servidores remotos. No es sinónimo de «nube»: hay servicios en la nube que no son aplicaciones web y algunas aplicaciones web ofrecen funciones que continúan disponibles sin conexión.
 
-Google Docs es un ejemplo de aplicación web: permite crear y editar documentos desde el navegador.
+Las aplicaciones web no suelen requerir una instalación tradicional, aunque algunas pueden ofrecerse como aplicaciones web progresivas (PWA) e instalarse para facilitar el acceso. Antes de elegir una aplicación, resulta útil comprobar si funciona en los dispositivos previstos, qué puede hacer sin conexión y cómo almacena y protege los datos. Para ver cómo se organiza técnicamente una aplicación web, consulta [R1](r01-internet-y-web.md).
 
-Un sitio web puede estar orientado principalmente a presentar información, mientras que una aplicación web permite realizar acciones y trabajar con datos. La diferencia no siempre es estricta: un mismo sitio puede combinar contenido y funciones de aplicación.
+## 3. Navegadores, enlaces y búsquedas
 
-## 4. Navegación por la Web
+### Hiperenlaces
 
-### Navegadores e hiperenlaces
+Un **hiperenlace** (o enlace) lleva a otra página, documento o recurso. Antes de abrir un enlace, se puede comprobar la dirección de destino —por ejemplo, mediante la vista previa del navegador— y revisar el dominio, sobre todo si conduce a una página de inicio de sesión o solicita datos personales.
 
-Un **navegador web** es un programa que permite encontrar y visualizar sitios web. Algunos navegadores conocidos son Chrome, Safari, Firefox y Edge.
+### Navegadores web
 
-Un **hiperenlace** (o simplemente enlace) conecta una página o un recurso con otro. Al seleccionar un enlace, el navegador abre el destino indicado.
+Un **navegador web** es la aplicación que utilizamos para abrir sitios y páginas web. Algunos ejemplos son Chrome, Firefox, Edge y Safari. Desde el navegador se pueden escribir direcciones URL, seguir enlaces, guardar marcadores y abrir varias páginas en pestañas.
 
 ### Motores de búsqueda
 
-Los **motores de búsqueda** ayudan a encontrar información entre los numerosos sitios disponibles en Internet. Se introduce una consulta y el buscador presenta resultados relacionados. Elegir términos concretos y añadir palabras que describan mejor lo que se busca puede ayudar a obtener resultados más útiles.
+Un **motor de búsqueda** es un servicio web que ayuda a localizar páginas e información. Se utiliza desde un navegador, escribiendo una consulta en la página del buscador o en la barra de búsqueda del navegador. Por ejemplo, Chrome es un navegador y Google es un motor de búsqueda: son herramientas distintas, aunque algunos navegadores integran un buscador para facilitar las consultas.
 
-El navegador y el motor de búsqueda cumplen funciones distintas: el navegador permite acceder a páginas web; el motor de búsqueda ayuda a localizarlas.
+Para afinar una búsqueda, se pueden probar estas técnicas:
 
-### Direcciones URL
+- Añadir palabras concretas sobre el tema, el lugar o la fecha.
+- Usar comillas para buscar una expresión exacta: `"seguridad en Internet"`.
+- Anteponer un signo menos para excluir un término: `jaguar -coche`.
+- Limitar los resultados a un sitio o dominio con `site:`: `becas site:educacion.gob.es`.
 
-Una **URL** (*Uniform Resource Locator*, o localizador uniforme de recursos) es la dirección de un recurso en la Web. Por ejemplo:
+Los resultados pueden incluir publicidad y no son necesariamente una clasificación de las fuentes más fiables. Antes de dar una información por válida, comprueba quién la publica, la fecha, las fuentes que cita y si otras fuentes fiables la corroboran.
+
+## 4. Direcciones URL
+
+Una **URL** (*Uniform Resource Locator*, o localizador uniforme de recursos) es la dirección que identifica dónde encontrar un recurso. Por ejemplo:
 
 ```text
-https://www.ejemplo.com:443/carpeta/pagina.html?tema=web#inicio
+https://www.ejemplo.com:443/carpeta/pagina.html?tema=web#resultados
 ```
 
-Sus partes principales son:
+- **Esquema:** `https` indica cómo se solicita el recurso. HTTP es el protocolo de la Web; HTTPS añade cifrado a la comunicación y permite verificar el sitio mediante certificados. **HTTPS protege la conexión, pero no demuestra por sí solo que el sitio sea legítimo o fiable.**
+- **Nombre de dominio:** `www.ejemplo.com` identifica el servidor mediante un nombre fácil de leer. El DNS ayuda a localizar la dirección IP asociada al dominio. En el ejemplo, `www` es un subdominio y `.com` es el dominio de nivel superior.
+- **Puerto (opcional):** `:443` señala el puerto de conexión para HTTPS, mientras que el puerto estándar para HTTP es 80. Los puertos estándar de HTTP y HTTPS suelen omitirse en la barra de direcciones.
+- **Ruta:** `/carpeta/pagina.html` identifica un recurso dentro del sitio.
+- **Parámetros (opcionales):** comienzan con `?` y transmiten datos adicionales, por ejemplo `tema=web`. Puede haber varios, separados por `&`.
+- **Fragmento (opcional):** comienza con `#` y apunta a una sección del recurso, como `resultados`. Normalmente permite saltar a esa sección sin solicitar otra página al servidor.
 
-- **Esquema:** indica cómo debe acceder el navegador al recurso. `https` es el esquema seguro de la Web; también existe `http`.
-- **Nombre de dominio:** identifica el sitio o servidor, como `www.ejemplo.com`. El dominio puede incluir subdominios y termina en un dominio de nivel superior, como `.com` o `.es`.
-- **Puerto (opcional):** indica un punto de conexión concreto del servidor, como `443` en el ejemplo.
-- **Ruta:** señala una página o recurso dentro del sitio, como `/carpeta/pagina.html`.
-- **Parámetros (opcionales):** empiezan por `?` y transmiten información adicional, por ejemplo `tema=web`.
-- **Ancla (opcional):** empieza por `#` y señala una sección concreta de la página, como `inicio`. Normalmente desplaza la vista sin cargar otra página.
-
-## 5. Evolución de la Web
-
-Una forma sencilla de resumir la evolución de la Web es observar cómo ha cambiado la participación de sus usuarios:
-
-- **Web 1.0 — lectura:** páginas principalmente estáticas; el usuario consulta la información.
-- **Web 2.0 — lectura y escritura:** páginas y servicios interactivos en los que los usuarios también publican, comentan y comparten contenido.
-- **Web 3.0 — nuevas propuestas de evolución:** las diapositivas la resumen como una ampliación de la lectura y escritura. El término no tiene una definición única y, en otros contextos, se asocia a la Web semántica, como se explica en [R1: Internet, la Web y sus aplicaciones](r01-internet-y-web.md).
-
-## 6. Para ampliar
+## 5. Para ampliar
 
 - [GCFGlobal: tutoriales de Internet](https://edu.gcfglobal.org/)
-- [Introducción a Internet](https://www.youtube.com/watch?v=jKA5hz3dV-g&t=88s)
-- [Motores de búsqueda](https://www.youtube.com/watch?v=7RlB1CJovTs)
+- [Almacenamiento en la nube](https://www.youtube.com/watch?v=4OO77HFcCUs&t=1s)
 - [Navegadores web](https://www.youtube.com/watch?v=FxirRVJWUTs)
+- [Motores de búsqueda](https://www.youtube.com/watch?v=7RlB1CJovTs)

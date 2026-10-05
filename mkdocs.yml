@@ -31,6 +31,8 @@ nav:
       - 2. Conceptos básicos de Internet: u01-aplicaciones-web-escritorio/r02-conceptos-basicos-internet.md
       - Actividades Office 365: u01-aplicaciones-web-escritorio/a01-office365.md
       - Actividades Microsoft Sway: u01-aplicaciones-web-escritorio/a02-sway.md
+      - Actividades Navegando con Google: u01-aplicaciones-web-escritorio/a03-busquedas-google.md
+      - Actividades OneDrive y ofimática online: u01-aplicaciones-web-escritorio/a04-onedrive-ofimatica-online.md
 extra_css:
   - assets/css/style.css
 extra_templates:
